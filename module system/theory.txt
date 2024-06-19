@@ -1,0 +1,30 @@
+node module system works on the 
+import and export functionality
+
+the core module for export is
+module
+ex:
+
+module.exports
+
+after the sebsequent hierarchy is
+ exports.<name>
+
+--------
+
+one file can contains
+
+only one
+module.exports because it is default export >> const xyz = require("file path");
+>>this is called default export
+
+
+and may have more than one exports.<name> >> const {abc , def} = require("file path")
+>> this is called named export
+
+so the final hierarchy is
+
+module >> exports >> <identifier name>
+
+node has >> export and require
+react has >> export and import
