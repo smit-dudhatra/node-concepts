@@ -21,7 +21,9 @@ this is just basic and regular infomation that needed in day to day life
 more description can only be get from the documentation only
 
 if app.use contains
-multiple handler functions then next('route') will not work in this case
+multiple handler functions then next('route') and next('router')  will not work in this case
 and handlers will be executed
+
+except 'route' or 'router' , express will through error
 
 
