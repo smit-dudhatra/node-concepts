@@ -26,4 +26,7 @@ and handlers will be executed
 
 except 'route' or 'router' , express will through error
 
+configurable middleware means a function that
+will return the function with (req,res,next) signature and will process the passed params to the outer function
+
 
