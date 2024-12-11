@@ -28,3 +28,19 @@ module >> exports >> <identifier name>
 
 node has >> export and require
 react has >> export and import
+
+------------------
+
+shortcut for named export
+
+module.exports.name = "first name"
+module.exports.age = 21
+
+exports.name = "first name";
+exports.age = 21
+
+there is no shortcut for default export
+
+only one way for default export
+
+module.exports = "some hard coded value"

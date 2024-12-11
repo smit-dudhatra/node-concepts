@@ -1,0 +1,47 @@
+event loop phases
+
+timers
+pending callbacks
+poll
+check
+close callbacks
+
+
+timers :- setTimeout and setInterval
+
+pending callbacks:-
+execute I/O related callbacks that were deferred (delayed , postponed)
+
+I/O related tasks means:-
+tasks that are done by worker pool (heavy tasks done by this)
+
+
+poll:-
+
+retrieve new I/O events and try to execute there Callbacks , if it is not possible , defer (delay) them 
+as a pending callback
+or 
+execute expired timers if there are any
+
+check:-
+execute setImmidiate callbacks
+
+close callbacks:-
+execute all close event callbacks
+
+if there are no any event listeners then are open
+then
+process.exit will be called
+
+--------
+fs.writeFile("message.txt" > 1 , dataToWrite > 2 , () => { > 3
+
+})
+
+writing process (data (2) will be written at file at path(1) )will be done by worker pool
+and 
+callback will be called by event loop
+-------
+first main thread (worker pool) will execute all the synchronous code and after that it will ,
+start executing the aysnchronous code and event loop will execute there respective callbacks
+in order of they come in queue

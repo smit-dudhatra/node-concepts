@@ -1,0 +1,17 @@
+how node js stays performent ?
+
+because of event driven architecture of node js
+
+how request A will be differentiate from request B?
+
+for every incoming request , the request listener will be called each time
+hence the data from the request A can't be accessed by request B
+
+single threaded means   
+    do one thing at a time
+        weather it is time taking or very small process
+    single thread == main thread == worker pool
+
+asynchronous means all that tasks that takes time to execute or say they will complete there execution in
+some future point of time
+
