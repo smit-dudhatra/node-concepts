@@ -1,0 +1,9 @@
+run >> add configurations
+
+restart : true
+runTimeExecutable: "nodemon"
+console : integratedTerminal
+program : >> start point of the program , most probably the app.js
+
+at the time when you start debugging , the opened file will be the start point of the debugging and will be set in the
+configuration of debugging
