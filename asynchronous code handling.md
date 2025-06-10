@@ -2,6 +2,8 @@ use async when you call the function that is dealing with promise (or resolve or
 
 consider this code snippet
 
+```
+
 async function returnPromiseResponse(number){
 
     const promise = new Promise((res, rej) => {
@@ -39,6 +41,7 @@ const wrappedFunction = async () => {
 }
 
 wrappedFunction();
+```
 
 we used await when we called returnPromiseResponse function
 becuase Promise is resolving (res is being called) in the returnPromiseResponse function
