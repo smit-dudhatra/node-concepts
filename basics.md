@@ -12,6 +12,10 @@
 // here line 9 and 10 yields the same results as the data is carrying only 1 fields
 // if you will parse more data
 // you will see the difference and "Buffer" approach will be fine in long term
+// if you do toString directly on array , it will just convert all the data chunks into string without concatenate them in one single piece
+// chunks = [Buffer.from("inp"), Buffer.from("ut=hello")]
+// it might look like this "inp,ut=hello"
+// but if we Buffer them , we are concatenating all the chunks and only after then we will convert them to string
 
             const body = parsedBody1.split("=")[1]; // Assuming the first part is the input
             const anotherBody = parsedBody2.split("=")[1]; // Assuming the first part is the input
