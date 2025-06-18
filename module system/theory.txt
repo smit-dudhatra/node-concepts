@@ -47,4 +47,4 @@ module.exports = "some hard coded value"
 
 in short shortcut is
 
-MEN >> module.exports >> default export and export.<name> >> named export
+MEN >> module.exports >> default export and exports.<name> >> named export
