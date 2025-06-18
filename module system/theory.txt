@@ -44,3 +44,7 @@ there is no shortcut for default export
 only one way for default export
 
 module.exports = "some hard coded value"
+
+in short shortcut is
+
+MEN >> module.exports >> default export and export.<name> >> named export
