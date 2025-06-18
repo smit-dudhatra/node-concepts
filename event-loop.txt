@@ -1,3 +1,11 @@
+node doesn't wait and pause , if you are doing some asynchronous stuff (callback , promise or async/await),
+it will not block the script execution
+it just registers the to-be executed action
+and executes once it will be done in future
+
+if we have something , that needs the result of time taking operaion (callback , promise (async/await))
+move that "dependent something" inside of that time taking process
+
 event loop phases
 
 timers
