@@ -27,7 +27,9 @@ use
 mostly use exact version
 
 like
-``` {
+```
+{
    "engines" : "22.16.0",
    "npm" : "10.9.2"
-}```
+}
+```
