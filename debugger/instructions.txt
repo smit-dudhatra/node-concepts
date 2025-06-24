@@ -1,5 +1,7 @@
 run >> add configurations
 
+./vscode/launch.json
+
 restart : true
 runTimeExecutable: "nodemon"
 console : integratedTerminal
