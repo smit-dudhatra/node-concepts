@@ -1,0 +1,22 @@
+app.use
+
+main purpose
+as middleware
+
+can be used with or without url
+only url prefix is matched , not full url
+
+usage:-
+
+to run middleware function for all or specific requests that are matched with given url prefix
+logging,parsing the request , authentication
+to mount the routers
+static directory
+
+app.get
+
+main purpose
+GET request handler for a specific full path match urls only
+
+always requires a exact match (full match) path 
+
