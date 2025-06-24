@@ -3,7 +3,7 @@ run >> add configurations
 ./vscode/launch.json
 
 restart : true
-runTimeExecutable: "nodemon"
+runTimeExecutable: "nodemon" >> nodemon should be installed globally
 console : integratedTerminal
 program : >> start point of the program , most probably the app.js
 
