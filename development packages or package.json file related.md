@@ -33,3 +33,9 @@ like
    "npm" : "10.9.2"
 }
 ```
+
+
+-----------------------------------------------------
+
+install a nodemon as devDependency and set as a start in scripts
+to use it in developemnt
