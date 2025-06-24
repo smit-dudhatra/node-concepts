@@ -7,3 +7,13 @@ program : >> start point of the program , most probably the app.js
 
 at the time when you start debugging , the opened file will be the start point of the debugging and will be set in the
 configuration of debugging
+
+short steps to use debugger:-
+
+add braking point , in the left gutter of code panel
+press F5
+choose NodeJs as environment
+run project in browser:- localhost:3000
+and the code execution will be stopped at the braking point
+
+check the variabls in the left panel
