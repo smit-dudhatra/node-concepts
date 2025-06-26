@@ -1,0 +1,12 @@
+app.use() vs app.use("/")
+
+identically both are same 
+as both will run for all the requests
+
+app.use() will run for every incoming request regardless of url
+app.use("/") will run for every incoming request which url starts with "/"
+like localhost:3000/
+
+so practically every route start with simple "/"
+
+so it will also execute for every request
