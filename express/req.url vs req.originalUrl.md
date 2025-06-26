@@ -1,7 +1,9 @@
 `req.url`
 
 Contains the URL path relative to the current route
+
 Gets modified as the request moves through middleware and routing
+
 If you have routers mounted at sub-paths, req.url will only contain the portion of the path after the mount point
 
 `req.originalUrl`
