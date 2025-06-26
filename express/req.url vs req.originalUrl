@@ -1,6 +1,4 @@
-```
-req.url
-```
+`he`
 
 Contains the URL path relative to the current route
 Gets modified as the request moves through middleware and routing
