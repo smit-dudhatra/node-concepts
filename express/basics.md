@@ -37,3 +37,7 @@ app.listen(3000);
 just remove the `http` reference
 
 ---------------------------------------------
+
+response types:-
+
+res.send("<p>Hellow world</p>");
