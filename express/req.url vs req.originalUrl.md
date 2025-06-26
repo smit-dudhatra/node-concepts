@@ -9,9 +9,13 @@ If you have routers mounted at sub-paths, req.url will only contain the portion 
 `req.originalUrl`
 
 Contains the complete original URL as received by the Express application
+
 Remains unchanged throughout the request lifecycle
+
 Preserves the full path regardless of which router or middleware is handling the request
+
 Example
+
 If you have a router mounted at /api and receive a request to /api/users:
 
 ```
