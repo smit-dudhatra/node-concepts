@@ -8,6 +8,7 @@ then don't use next as third argument
 
 level 1:-
 ---------------------------------------------
+```
 const http = require('http');
 const express = require('express');
 
@@ -22,11 +23,17 @@ serer.listen(3000 , (error) => {
 
   console.log("Listening on port 3000")
 )
-
+```
 ----------------------------------------------
 
 level 2:-
 
+const express = require("express");
 
+const app = express();
+
+app.listen(3000);
+
+just remove the `http` reference
 
 ---------------------------------------------
