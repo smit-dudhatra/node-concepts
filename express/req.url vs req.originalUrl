@@ -12,8 +12,10 @@ Preserves the full path regardless of which router or middleware is handling the
 Example
 If you have a router mounted at /api and receive a request to /api/users:
 
+```
 In the main application: both req.url and req.originalUrl would be /api/users
 In the router mounted at /api: req.url would be users while req.originalUrl would still be /api/users
+```
 
 This distinction is especially important when working with mounted routers or when middleware manipulates the URL during processing.
 
