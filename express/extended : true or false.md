@@ -17,6 +17,7 @@ app.use(express.urlencoded({ extended: true }));
   - Only supports simple key-value pairs (`a=1&b=2`).
   - Uses Node's built-in querystring library
   - Only supports simple key-value pairs
+  - user[name]=John&user[age]=25
   - Would parse the above example as { 'user[name]': 'John', 'user[age]': '25' }
   - More efficient but limited in capability
 
