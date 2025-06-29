@@ -43,8 +43,8 @@ const https = require('https');
 const fs = require('fs');
 
 const file = fs.createWriteStream('downloaded-file.jpg');
-https.get('https://example.com/image.jpg', (response) => {
-  response.pipe(file);
+https.get('https://example.com/image.jpg', (data) => {
+  data.pipe(file); // data is readable stream
   file.on('finish', () => {
     file.close();
     console.log('Download completed!');
