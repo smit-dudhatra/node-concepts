@@ -87,11 +87,11 @@ app.post('/submit', (req, res) => {
 
 ## **Summary Table**
 
-| Postman Body Type        | Express Middleware Required           | How to Access Data         |
-|-------------------------|---------------------------------------|----------------------------|
-| form-data               | `multer().none()` or `express.urlencoded` | `req.body.username`        |
-| x-www-form-urlencoded   | `express.urlencoded({ extended: true })` | `req.body.username`        |
-| raw (JSON)              | `express.json()`                          | `req.body.username`        |
+| Postman Body Type                       | Express Middleware Required               | How to Access Data         |
+|-----------------------------------------|-------------------------------------------|----------------------------|
+| form-data without File , only text      | `multer().none()`                         | `req.body.username`        |
+| x-www-form-urlencoded                   | `express.urlencoded({ extended: true })`  | `req.body.username`        |
+| raw (JSON)                              | `express.json()`                          | `req.body.username`        |
 
 ---
 
