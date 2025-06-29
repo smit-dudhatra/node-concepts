@@ -112,3 +112,7 @@ Use `"type": "module"` if you want modern, standards-based JavaScript modules in
 **References:**
 - [Node.js Docs: ECMAScript Modules](https://nodejs.org/api/esm.html)
 - [Node.js Docs: Packages and `"type"` field](https://nodejs.org/api/packages.html#type)
+
+- in short
+- react uses ECMA Script >> import and export
+- NodeJs uses CommonJS module system >> require and module.exports (default behaviour)
