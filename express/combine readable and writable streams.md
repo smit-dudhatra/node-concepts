@@ -34,9 +34,30 @@ const writable = fs.createWriteStream('output.txt.gz');
 readable.pipe(gzip).pipe(writable);
 ```
 
+## 3. File Download Example (HTTP)
+
+You can combine streams to download a file from the internet and save it to disk:
+
+```js
+const https = require('https');
+const fs = require('fs');
+
+const file = fs.createWriteStream('downloaded-file.jpg');
+https.get('https://example.com/image.jpg', (response) => {
+  response.pipe(file);
+  file.on('finish', () => {
+    file.close();
+    console.log('Download completed!');
+  });
+});
+```
+- Here, `response` is a readable stream for the HTTP response.
+- `file` is a writable stream to the local file system.
+- The `.pipe()` method streams the downloaded data directly into the file.
+
 ---
 
-## 3. Handling Stream Events (Optional)
+## 4. Handling Stream Events (Optional)
 
 You can listen to events for error handling or completion:
 
@@ -52,7 +73,7 @@ readable.pipe(writable)
 
 ---
 
-## 4. Custom Transform Stream Example
+## 5. Custom Transform Stream Example
 
 You can create your own transform stream to modify data as it passes through:
 
