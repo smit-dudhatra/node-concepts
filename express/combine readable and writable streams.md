@@ -2,6 +2,9 @@
 
 Combining readable and writable streams in Node.js is commonly done using the `.pipe()` method. This method allows you to take data from a readable stream and send it directly to a writable stream—useful for operations like copying files, compressing, or transforming data.
 
+whenever you experience that reading to any resource (file or resource that are on server or in db)
+is taking too much time , use streams and pipe
+
 ---
 
 ## 1. Basic Example: File Copy
