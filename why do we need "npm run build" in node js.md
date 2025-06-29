@@ -39,10 +39,10 @@
 ```json
 {
   "scripts": {
-    "build": "tsc",                // TypeScript compile
-    "build": "babel src -d dist",  // Babel transpile
-    "build": "webpack",            // Webpack bundle
-    "build": "npm run lint && npm run test && tsc" // Composite build
+    "build": "tsc",                // TypeScript compile // - Runs the TypeScript compiler (`tsc`) to transpile `.ts` files to `.js`.
+    "build": "babel src -d dist",  // Babel transpile // Uses Babel to transpile modern JavaScript to older JavaScript for compatibility.
+    "build": "webpack",            // Webpack bundle // - Uses Webpack to bundle your code and assets.
+    "build": "npm run lint && npm run test && tsc" // Composite build //  Lint code for errors/style issues  , Run automated tests , Compile TypeScript to JavaScript 
   }
 }
 ```
