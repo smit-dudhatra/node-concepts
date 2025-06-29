@@ -55,6 +55,14 @@
 - `npm run build` prepares your application for production by transforming, optimizing, and organizing your code and assets.
 - It is essential for projects using TypeScript, Babel, bundlers like Webpack, or any process that modifies source files for deployment.
 - Simple projects with only standard JavaScript may not require a build step.
+-  **The actual build command depends on your project.**
+- Check your `package.json` under the `"scripts"` section to see (or define) what `"build"` does.
+- Common build tools: TypeScript (`tsc`), Babel, Webpack, Parcel, etc.
+
+---
+
+**Tip:**  
+If your project does not require transpiling or bundling (plain Node.js), you may not need a build command at all.
 
 ---
 
